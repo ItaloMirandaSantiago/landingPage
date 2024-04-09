@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.image {
+    position: relative;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(138, 43, 226, 0.8); /* Cor de fundo roxa com transparência */
+    z-index: -1;
+}
+
+.image {
+    background-image: url('./image/homem-usando-o-celular_1_476477.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0; /* Garante que a imagem fique abaixo da cor de fundo */
+}
+
+.color{
+    background-color: rgba(138, 43, 226, 0.8);
+}
