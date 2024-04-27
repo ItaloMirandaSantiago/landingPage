@@ -599,6 +599,10 @@ video {
   height: 24rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-max {
   min-height: -moz-max-content;
   min-height: max-content;
